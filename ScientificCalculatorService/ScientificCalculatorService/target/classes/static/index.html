@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <!-- Add any additional CSS or stylesheets here -->
+</head>
+<body>
+
+<div>
+    <h2>Scientific Calculator</h2>
+    <form id="calculatorForm">
+        <input type="text" id="display" readonly>
+        <br>
+        <button type="button" onclick="appendToDisplay('1')">1</button>
+        <button type="button" onclick="appendToDisplay('2')">2</button>
+        <button type="button" onclick="appendToDisplay('+')">+</button>
+        <button type="button" onclick="appendToDisplay('-')">-</button>
+        <button type="button" onclick="appendToDisplay('*')">*</button>
+        <button type="button" onclick="appendToDisplay('/')">/</button>
+        <button type="button" onclick="appendToDisplay('√')">√</button>
+        <button type="button" onclick="appendToDisplay('^2')">^2</button>
+        <button type="button" onclick="appendToDisplay('sin')">sin</button>
+        <button type="button" onclick="appendToDisplay('cos')">cos</button>
+        <button type="button" onclick="appendToDisplay('tan')">tan</button>
+        <button type="button" onclick="clearDisplay()">C</button>
+        <br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+</div>
+
+<script src="calculator.js"></script>
+<!-- Add any additional scripts or JavaScript libraries here -->
+</body>
+</html>
